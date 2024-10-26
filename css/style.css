@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
+
+html, body {
+  background-color: #72A6BE;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  font-family: "Comfortaa", serif;
+  min-height: 100vh;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header a:link{
+  background-color: black;
+  text-align: center;
+  align-items: center;
+}
+header {
+  width: 100%;
+  background-color: #72A6BE;
+  padding: 0;
+
+}
+
+header ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+header a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+header img {
+  margin-bottom: none;
+  width: 200px; height: auto;
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+/* Add a black background color to the top navigation */
+.navbar ul{
+  background-color: #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: justify;
+  align-items: center;
+  padding: 14px;
+  text-decoration: none;
+  font-size: 17px;
+  border-radius: 5px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Add a color to the active/current link */
+.navbar a.active {
+  background-color: #05123b;
+  color: white;
+}
+
+section.hero{
+  display: flex;
+  padding: 0rem;
+  justify-content: space-between;
+}
+.hero img{
+  margin-top: 6rem;
+  margin-right: 10rem;
+  display: flex;
+  text-align: end;
+  width: 600px; height: auto;
+  border-radius: 6px;
+}
+
+.hero h1 {
+  font-size: 100px;
+  margin: 15rem;
+  text-align: start;
+  color: #000;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+}
+.hero h1:hover
+{
+  background-color: #000;
+  color: white;
+}
+figcaption{
+  text-align: right;
+  padding-right: 10rem;
+}
+
+.cta p{
+  display: flex;
+  flex-direction: column;
+  margin: 15rem;
+  text-align: center;
+  font-size: 40px;
+}
+.cta
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 10%;
+}
+
+.details {  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 100%;
+  padding-bottom: 20%;
+}
+.detail
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 18px;
+  text-align: center;
+}
+.detail p{
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  justify-content: space-around;
+  color: #000;
+  padding-top: 2rem;
+  letter-spacing: 2px;
+}
+.details a img{ /*Lower buttons to detail pages*/
+  justify-content: space-evenly;
+  height: 90px;
+  width: auto;
+  border-radius: 6px;
+}
+.details p:hover
+{
+  font-size: 19px;
+}
+#planegif {
+  height: 300px;
+  width: auto;
+  margin-bottom: 15rem;
+  margin-left: 45rem;
+
+}
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+}
+footer img
+{
+  height: 18px;
+  width: auto;
+}
+
+/*/////////////////////////////////////////////////////////////////////////////Here begins DETAIL PAGE 1*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.welcomepage h2 {
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin: 130px 150px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+  border-color: #8FB2C5;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 4px;
+} 
+
+.mica
+{
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  align-items: start;
+  background-color: #8FB2C5;
+  padding-left: 10rem;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.mica h2
+{
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.mica a:link
+{
+  color: darkblue;
+}
+.mica a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.mica a:visited
+{
+  color: darkred;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+}
+
+section ul, section p { /*here is use of comma ,*/
+  width: 60%; /* Content takes up 60% of the width */
+}
+
+aside {
+  margin: 10rem;
+  width: 35%; /* Image takes up 35% of the width */
+  display: flex;
+  flex-direction: row;
+}
+  aside img {
+  width: 85%; /* Make the image take up the full width of the aside */
+  height: auto; 
+  border-radius: 8px;
+  margin-left: 5rem;
+}
+.sushi
+{
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+  align-items: start;
+  padding-left: 10rem;
+  background-color: #8FB2C5;
+  letter-spacing: 1px;
+}
+.sushi a:link
+{
+  color: darkblue;
+}
+.sushi a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.sushi a:visited
+{
+  color: darkred;
+}
+
+
+
+/*/////////////////////////////////////////////////////////////////////////////Here begins CONTACT PAGE */
+.thanks 
+{
+  font-size: 80px;
+  text-align: center;
+  align-items: center;
+  margin: 110px auto 50px;
+  text-align: center;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+.rafa
+{
+  justify-content: center;
+  padding-bottom: 10rem;
+}
+.introform 
+{
+  font-size: 40px;
+  text-align: center;
+  align-items: center;
+  margin: 130px 150px;
+  word-spacing: 2px;
+  letter-spacing: 1px;
+}
+form
+{
+  font-size: 20px;
+  height: 500px;
+  width: 500px;
+  background-color: darkred;
+  
+}
+form label 
+{
+  display: block;
+  text-indent: 5px;
+}
