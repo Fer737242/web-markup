@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
+/*Here is the home page*/
+/* Base Styles (Mobile-first) */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html, body {
   background-color: #72A6BE;
   color: #000;
@@ -8,67 +16,56 @@ html, body {
   font-family: "Comfortaa", serif;
   min-height: 100vh;
 }
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-header a:link{
+ 
+/* Header Styles */
+header a:link {
   background-color: black;
   text-align: center;
   align-items: center;
 }
+ 
 header {
   width: 100%;
   background-color: #72A6BE;
-  padding: 0;
-
 }
-
+ 
 header ul {
   list-style-type: none;
   display: flex;
   justify-content: center;
-  padding: 1rem;
 }
-
+ 
 header a {
   color: #fff;
   text-decoration: none;
   font-size: 1.2rem;
 }
-
-header img {
-  margin-bottom: none;
+ 
+header ul img {
   width: 200px; height: auto;
   display: flex;
   flex-direction: column;
-
 }
-
-
-/* Add a black background color to the top navigation */
-.navbar ul{
+ 
+/* Navbar Styles */
+.navbar ul {
   background-color: #000;
   overflow: hidden;
   display: flex;
-  justify-content: space-evenly;
-  padding: 5px;
-}
-
-/* Style the links inside the navigation bar */
-.navbar a {
-  float: left;
-  color: #f2f2f2;
-  text-align: justify;
+  flex-direction: column;
   align-items: center;
-  padding: 14px;
+  padding: 5px;
+  position: relative;
+}
+ 
+.navbar a {
+  color: #f2f2f2;
+  padding: 10px;
   text-decoration: none;
   font-size: 17px;
   border-radius: 5px;
+  display: block;
 }
-
 /* Change the color of links on hover */
 .navbar a:hover {
   background-color: #ddd;
@@ -80,97 +77,66 @@ header img {
   background-color: #05123b;
   color: white;
 }
-
-section.hero{
-  display: flex;
-  padding: 0rem;
-  justify-content: space-between;
-}
-.hero img{
-  margin-top: 6rem;
-  margin-right: 10rem;
-  display: flex;
-  text-align: end;
-  width: 600px; height: auto;
-  border-radius: 6px;
-}
-
-.hero h1 {
-  font-size: 100px;
-  margin: 15rem;
-  text-align: start;
-  color: #000;
-  display: flex;
-  flex-direction: row;
-  border-radius: 5px;
-}
-.hero h1:hover
-{
-  background-color: #000;
-  color: white;
-}
-figcaption{
-  text-align: right;
-  padding-right: 10rem;
-}
-
-.cta p{
+/* Hero Section */
+.hero {
   display: flex;
   flex-direction: column;
-  margin: 15rem;
-  text-align: center;
-  font-size: 40px;
-}
-.cta
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10%;
-}
-
-.details {  
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 100%;
-  padding-bottom: 20%;
-}
-.detail
-{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  font-size: 18px;
-  text-align: center;
-}
-.detail p{
-  justify-content: center;
-  align-content: center;
-  text-align: center;
   justify-content: space-around;
-  color: #000;
-  padding-top: 2rem;
-  letter-spacing: 2px;
+  align-items: center;
+  margin: 0px 100px;
+  gap: 20px;
 }
-.details a img{ /*Lower buttons to detail pages*/
-  justify-content: space-evenly;
-  height: 90px;
-  width: auto;
+.hero .heroheading
+{
+  max-width: 500px;
+  text-align: left;
+  font-weight: bold;
+  font-size: 90px;
+}
+ 
+.hero img {
+  width: 80%;
+  max-width: 400px;
   border-radius: 6px;
 }
-.details p:hover
-{
-  font-size: 19px;
+ 
+/* CTA Section */
+.cta p {
+  font-size: 1.5rem;
+  text-align: center;
 }
-#planegif {
-  height: 300px;
-  width: auto;
-  margin-bottom: 15rem;
-  margin-left: 45rem;
-
+ 
+.cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
 }
+ 
+/* Details Section */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+ 
+.detail {
+  text-align: center;
+  width: 100%;
+  max-width: 150px;
+}
+ 
+.detail img {
+  width: 50px;
+}
+ 
+.detail p {
+  font-size: 0.9rem;
+}
+ 
+/* Footer again*/
 footer {
   background-color: #000;
   color: #fff;
@@ -178,18 +144,128 @@ footer {
   padding: 1rem;
   width: 100%;
 }
-footer img
+footer p img
 {
-  height: 18px;
-  width: auto;
+  width: 15px;
+  height: auto;
+}
+#planegif
+{
+  width: 400px;
+  height: auto;
+}
+.cookie-banner {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  z-index: 9999; 
+}
+ 
+.cookie-banner p {
+  margin: 0;
+  font-size: 14px;
+}
+ 
+.cookie-banner a {
+  color: #fff;
+  text-decoration: underline;
+}
+ 
+.cookie-accept-btn {
+  background-color: darkred;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+  
+}
+ 
+.cookie-accept-btn:hover {
+  background-color: #0056b3;
 }
 
-/*/////////////////////////////////////////////////////////////////////////////Here begins DETAIL PAGE 1*/
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+
+
+/* PC Styles (min-width: 769px) */
+@media (min-width: 769px) {
+  /* Header */
+  header ul {
+    display: flex;
+    justify-content: center;
+  }
+ 
+  /* Navbar */
+  .navbar ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+ 
+  /* Hero Section */
+  section.hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem;
+  }
+
+ 
+  .hero h1 {
+    font-size: 4rem;
+    margin: 0;
+  }
+ 
+  /* CTA Section */
+  .cta p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+ 
+  .cta {
+    padding: 4rem;
+  }
+ 
+  /* Details Section */
+  .details {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+ 
+  .detail {
+    flex-basis: 18%;
+  }
+ 
+  .detail img {
+    width: 60px;
+  }
+ 
+  .detail p {
+    font-size: 1rem;
+  }
+ 
+  /* Footer */
+  .footer {
+    padding: 1.5rem;
+  }
+  footer p img
+{
+  width: 15px;
+  height: auto;
 }
+}
+#planegif
+{
+  width: 200px;
+  height: auto;
+}
+/*Here is ENDS the home page*/
+
+/*/////////////////////////////////////////////////////////////////////////////Here begins DETAIL PAGES */
+
 .welcomepage h2 {
   font-size: 40px;
   text-align: center;
@@ -203,7 +279,7 @@ footer img
   border-radius: 4px;
 } 
 
-.mica
+.mica, .sushi, .sheba, .bakery, .scheveningen, .farm
 {
   display: flex;
   flex-direction: column;
@@ -214,10 +290,14 @@ footer img
   letter-spacing: 1px;
   font-size: 20px;
 }
-.mica h2
+.mica h2, .sushi h2, .sheba h2, .bakery h2, .scheveningen h2, .farm h2 
 {
   text-transform: uppercase;
   font-weight: bold;
+}
+.mica, .sushi, .sheba, .bakery, .scheveningen, .farm, h2:first-letter {
+  font-size: 130%;
+  color: black;
 }
 .mica a:link
 {
@@ -254,16 +334,6 @@ aside {
   border-radius: 8px;
   margin-left: 5rem;
 }
-.sushi
-{
-  display: flex;
-  flex-direction: column;
-  line-height: 2rem;
-  align-items: start;
-  padding-left: 10rem;
-  background-color: #8FB2C5;
-  letter-spacing: 1px;
-}
 .sushi a:link
 {
   color: darkblue;
@@ -278,6 +348,63 @@ aside {
 {
   color: darkred;
 }
+.sheba a:link
+{
+  color: darkblue;
+}
+.sheba a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.sheba a:visited
+{
+  color: darkred;
+}
+.bakery a:link
+{
+  color: darkblue;
+}
+.bakery a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.bakery a:visited
+{
+  color: darkred;
+}
+.scheveningen a:link
+{
+  color: darkblue;
+}
+.scheveningen a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.scheveningen a:visited
+{
+  color: darkred;
+}
+.farm a:link
+{
+  color: darkblue;
+}
+.farm a:hover
+{
+  text-decoration: double;
+  font-size: 1.1em;
+  color: #000;
+}
+.farm a:visited
+{
+  color: darkred;
+}
+
 
 
 
@@ -296,8 +423,9 @@ aside {
 {
   justify-content: center;
   padding-bottom: 10rem;
+  border-radius: 5px;
 }
-.introform 
+.introform  
 {
   font-size: 40px;
   text-align: center;
@@ -308,14 +436,60 @@ aside {
 }
 form
 {
+  margin: 200px  auto 200px;
   font-size: 20px;
-  height: 500px;
-  width: 500px;
-  background-color: darkred;
-  
+  height: 400px;
+  width: 350px;
+  background-color: rgb(139, 138, 150);
+  border-radius: 5px;
+  line-height: 2rem;
 }
 form label 
 {
   display: block;
+  text-indent: 10px;
+  border-radius: 5px;
+  
+}
+form input
+{
+  width: 90%;
+  height: 30px;
+}
+form legend
+{
+  font-size: small;
   text-indent: 5px;
 }
+textarea#msg
+{
+  width: 90%;
+  height: 8rem;
+}
+input#name, input#mail, textarea#msg
+{
+  margin: 0px 15px 10px;
+  text-indent: 5px;
+  border-radius: 5px;
+}
+/* submit*/button
+{
+  display: block;
+  width: 4rem;
+  height: 1.3rem;
+  margin: 0px auto 10px;
+  background-color:#0a0a23;
+  color: #fff;
+  border:none;
+  border-radius:10px;
+}
+button:hover
+{
+  background-color: #ddd;
+  color: black;
+  width: 5rem;
+  height: 1.5rem;
+}
+/*
+/*responsiveness//////////////////////////////////////////////////////////////////////////////////*
+/* Media Queries */
