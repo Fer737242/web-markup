@@ -7,7 +7,7 @@
     <meta name="keywords" content="Netherlands, travel, explore, local, food">
     <meta name="author" content="Fernando VJ">
     <title>Contact</title>
-    <link rel="icon" href="./Pictures/Captura de pantalla 2024-10-08 183309.png" type="image/x-icon">
+    <link rel="icon" href="./Pictures/Capturadepantalla2024-10-08183309.png" type="image/x-icon" title="Favicon"> <!--alt attribute is not allowed for favicon. FYI-->
     <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
@@ -45,15 +45,18 @@
         </section>  
 
         <section class="rafa"> 
-            <img src="./Pictures/tumblr_e0a209a0c09d57529f34ec0c42f3ce8b_30c3f8d8_1280.gif" alt="Rafita thanks you">     
+            <h2>
+            <img src="./Pictures/tumblr_e0a209a0c09d57529f34ec0c42f3ce8b_30c3f8d8_1280.gif" alt="Rafita thanks you" title="Rafita thanks you"> 
+            </h2>    
         </section>
 
         <section class="introform">
             <h2>Please take a moment to fill out this form, it would help us know how we can improve. New places await!</h2>
         </section>
 
-        <form action="#" method="post">
+        <fieldset>
             <legend>Contact</legend>
+        <form action="#" method="post">
             <label for="name">Name:</label>
             <input type="text" placeholder="Full name" id="name" name="user_name" title="Enter your name"/>
             
@@ -63,45 +66,68 @@
             <label for="msg">Message:</label>
             <textarea id="msg" name="user_message" placeholder="Type your message here" title="Enter your message"></textarea>
 
-            <button type="input" title="Submit">Submit</button>
+            
+            <input class="input" type="submit" value="Submit"/>
         </form>
+        </fieldset>
+
+        <table class="table">
+            <caption>Quick overview</caption>
+            <tr>
+                <td>Vegan restaurants</td>
+                <td>Mica and Vegan Sushi Bar</td>
+            </tr>
+            <tr>
+                <td>Vegetarian restaurants</td>
+                <td>The Queen of Sheba and Vegan Bakery</td>
+            </tr>
+            <tr>
+                <td>Families</td>
+                <td>Sea Life Scheveningen and Zoo Animal Farm</td>
+            </tr>
+            <tr>
+                <td>Couples</td>
+                <td>Zaandam and Texel</td>
+            </tr>
+        </table>
 
         <section class="details">
+            <h2>Some of the places we recommend:</h2>
             <article class="detail">
                 <a href="index.html">
-                    <img src="./Pictures/Captura de pantalla 2024-10-24 182802.png" title="Home page" alt="Button to homepage">
+                    <img src="./Pictures/Capturadepantalla2024-10-24182802.png" title="Home page" alt="Button to homepage">
                 </a>
-                <p>Home page</p>
+                <h4>Home page</h4>
             </article>
             <article class="detail">
                 <a href="Detailpage1.html">
-                    <img src="./Pictures/Captura de pantalla 2024-10-12 215511.png" title="Find vegan restaurants" alt="Button to Vegan restaurants">
+                    <img src="./Pictures/veganrest.png" title="Find vegan restaurants" alt="Button to Vegan restaurants">
                 </a>
-                <p>Find great vegan places.</p>
+                <h4>Find great vegan places.</h4>
             </article>
             <article class="detail">
                 <a href="Detailpage2.html">
                     <img src="./Pictures/Vegetarianlink.png" title="Find vegetarian places" alt="Button to Vegetarian places">
                 </a>
-                <p>Find amazing vegetarian places.</p>
+                <h4>Find amazing vegetarian places.</h4>
             </article>
             <article class="detail">
                 <a href="Detailpage3.html">
                     <img src="./Pictures/Familiestrip.png" title="Find places for families" alt="Button to places for families">
                 </a>
-                <p>Find the perfect places to visit in family</p>
+                <h4>Find the perfect places to visit in family</h4>
             </article>
             <article class="detail">
                 <a href="Detailpage4.html">
                     <img src="./Pictures/Couplestrip.png" title="Find places for couples" alt="Button to places for couples">
                 </a> 
-                <p>Find some peaceful places to visit with your partner</p>
+                <h4>Find some peaceful places to visit with your partner</h4>
             </article>
         </section>
     </main>
     
     <footer>
-        <p>Not all rights reserved. &reg; 2024 <img src="./Pictures/Favicon.jpg" alt="Favicon"></p>
+        <p>Not all rights reserved. &reg; 2024 <img src="./Pictures/Favicon.jpg" title="Favicon" alt="Favicon"> HooollyTrip &copy; </p> 
     </footer>
 </body>
 </html>

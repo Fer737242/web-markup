@@ -1,7 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
 
 /*Here is the home page*/
-/* Base Styles (Mobile-first) */
+/* Base Styles (Mobile-first) */ /*MOBILE*/
+@media (max-width: 680px) {
+  html
+  {
+    width: 100%
+  }
+
+  body
+  {
+    width: 100%;
+    height: 100%;
+  }
+  .hero .heroheading
+  {
+    font-size: 1px;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: right;
+}
+}
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +36,9 @@ html, body {
   display: flex;
   flex-direction: column;
   font-family: "Comfortaa", serif;
-  min-height: 100vh;
+
+
+min-height: 100vh;
 }
  
 /* Header Styles */
@@ -89,20 +113,23 @@ header ul img {
 .hero .heroheading
 {
   max-width: 500px;
+  height: auto;
+  /*min-width: auto;*/
   text-align: left;
   font-weight: bold;
   font-size: 90px;
 }
  
 .hero img {
-  width: 80%;
+  height: auto;
   max-width: 400px;
+  min-width: auto;
   border-radius: 6px;
 }
  
 /* CTA Section */
-.cta p {
-  font-size: 1.5rem;
+.cta h1 {
+  font-size: 2rem;
   text-align: center;
 }
  
@@ -130,6 +157,7 @@ header ul img {
  
 .detail img {
   width: 50px;
+  border-radius: 4pxx ;
 }
  
 .detail p {
@@ -151,6 +179,7 @@ footer p img
 }
 #planegif
 {
+  float: left;
   width: 400px;
   height: auto;
 }
@@ -192,8 +221,8 @@ footer p img
 
 
 
-/* PC Styles (min-width: 769px) */
-@media (min-width: 769px) {
+/* DESKTOP (min-width: 1024px) */
+@media (min-width: 1024px) {
   /* Header */
   header ul {
     display: flex;
@@ -333,7 +362,7 @@ aside {
   height: auto; 
   border-radius: 8px;
   margin-left: 5rem;
-}
+  }
 .sushi a:link
 {
   color: darkblue;
@@ -419,9 +448,10 @@ aside {
   word-spacing: 2px;
   letter-spacing: 1px;
 }
-.rafa
+.rafa img
 {
-  justify-content: center;
+  max-width: 100%;
+  min-width: 100%;
   padding-bottom: 10rem;
   border-radius: 5px;
 }
@@ -456,7 +486,12 @@ form input
   width: 90%;
   height: 30px;
 }
-form legend
+legend
+{
+  font-size: 30px;
+  text-align: center;
+} 
+form 
 {
   font-size: small;
   text-indent: 5px;
@@ -472,13 +507,13 @@ input#name, input#mail, textarea#msg
   text-indent: 5px;
   border-radius: 5px;
 }
-/* submit*/button
+/* submit*/ input.input
 {
   display: block;
   width: 4rem;
   height: 1.3rem;
-  margin: 0px auto 10px;
-  background-color:#0a0a23;
+  margin: auto auto 5px;
+  background-color:#72A6BE;
   color: #fff;
   border:none;
   border-radius:10px;
@@ -487,9 +522,40 @@ button:hover
 {
   background-color: #ddd;
   color: black;
-  width: 5rem;
+  width: 1rem;
   height: 1.5rem;
+}
+tr:nth-child(odd) {
+  background-color: #FFF; 
+}
+tr:nth-child(even) {
+  background-color: #CFF; 
+}
+.table > caption {
+  font-size: 1.5em; 
+  font-weight: bold; 
+  color: #444; 
+  border-radius: 4px;
+float: none;
+align-items: center;
+border-spacing: 3px;
+border: 1px solid #000;
+border-radius: 6px;
+}
+
+.table > tr {
+  border: 1px solid #000; /* Apply border only to direct child rows (not nested ones, if any) */
+}
+.table
+{
+float: none;
+align-items: center;
+border-collapse: separate;
+border-spacing: 3px;
+border: 1px solid #000;
+border-radius: 6px;
+padding: 3px;
+margin-left: 40px;
 }
 /*
 /*responsiveness//////////////////////////////////////////////////////////////////////////////////*
-/* Media Queries */
